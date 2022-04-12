@@ -484,7 +484,7 @@ body {
 
 @media (min-width: 1238px) {
     .readers__photo {
-        width: 20vw;
-        height: 20vw;
+        width: 12vw;
+        height: 12vw;
     }
 }
