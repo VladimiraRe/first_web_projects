@@ -12,10 +12,10 @@
     margin-right: (108px / 1440px) * 100vw;
 }
 
-@import "../search/search";
+@import "../search/search.scss";
 
 .header__search {
     margin-right: (368px / 1440px) * 100vw;
 }
 
-@import "../user/user";
+@import "../user/user.scss";
