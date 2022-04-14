@@ -7,10 +7,10 @@
         "_var.scss",
         "_mixins.scss",
         "_settings.scss",
-        "blocks/header/_header.scss",
-        "blocks/header/_header__top.scss",
-        "blocks/header/_search.scss",
-        "blocks/header/_user.scss"
+        "../blocks/header/_header.scss",
+        "../blocks/header/_header__top.scss",
+        "../blocks/search/_search.scss",
+        "../blocks/user/_user.scss"
     ],
     "names": [],
     "file": "style.css"
