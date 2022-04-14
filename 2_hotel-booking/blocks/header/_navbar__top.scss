@@ -1,4 +1,4 @@
-.header__top {
+.navbar__top {
     display: flex;
     justify-content: flex-start;
     padding-top: 40px;
@@ -7,14 +7,14 @@
     background-color: #fff;
 }
 
-.header__logo-img {
+.navbar__logo-img {
     @include adaptive-width(177px);
     margin-right: (108px / 1440px) * 100vw;
 }
 
 @import "../search/search.scss";
 
-.header__search {
+.navbar__search {
     margin-right: (368px / 1440px) * 100vw;
 }
 

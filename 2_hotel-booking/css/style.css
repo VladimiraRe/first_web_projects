@@ -411,7 +411,7 @@ body {
   font-display: swap;
 }
 
-.header__top {
+.navbar__top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -426,7 +426,7 @@ body {
   background-color: #fff;
 }
 
-.header__logo-img {
+.navbar__logo-img {
   width: 12.29167vw;
   margin-right: 7.5vw;
 }
@@ -472,7 +472,7 @@ body {
           align-items: center;
 }
 
-.header__search {
+.navbar__search {
   margin-right: 25.55556vw;
 }
 
@@ -506,5 +506,9 @@ body {
   color: #333333;
   line-height: 17.57px;
   margin-left: 1.25vw;
+}
+
+.navbar-menu__link {
+  text-decoration: none;
 }
 /*# sourceMappingURL=style.css.map */
