@@ -1,0 +1,30 @@
+.search {
+    @include adaptive-width(350px);
+    display: flex;
+    overflow: hidden;
+    border-radius: 6px;
+
+    &__input {
+        @include adaptive-width(285px);
+        height: 40px;
+        border: none;
+        background-color: $blue;
+        padding-left: (23px / 1440px) * 100vw;
+        padding-right: (23px / 1440px) * 100vw;
+        @include font-mulish(12px, 400, $font-grey, 15.06px);
+    }
+    
+    &__button {
+        @include adaptive-width(65px);
+        height: 40px;
+        border: none;
+        background-color: $red;
+        padding: 0;
+        display: flex;
+    }
+
+    &__img {
+        margin: auto;
+        align-items: center;
+    }
+}

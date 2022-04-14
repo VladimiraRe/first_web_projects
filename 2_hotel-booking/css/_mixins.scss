@@ -1,0 +1,11 @@
+@mixin adaptive-width($width) {
+    width: ($width / 1440px) * 100vw;
+}
+
+@mixin font-mulish($fs, $fw, $color, $lh) {
+    font-family: "Mulish", serif;
+    font-size: $fs;
+    font-weight: $fw;
+    color: $color;
+    line-height: $lh;
+}
