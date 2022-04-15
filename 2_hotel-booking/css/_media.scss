@@ -24,3 +24,53 @@
         }
     }
 }
+
+@media (max-width: 720px) {
+    .navbar {
+        &__top {
+            justify-content: space-between;
+        }
+
+        &-menu {
+            display: none;
+        }
+
+        &__logo-img {
+            width: 133px;
+        }
+
+        &__adaptive-btn {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            height: 11px;
+            border: none;
+            background-color: $light;
+            cursor: pointer;
+            padding: 0;
+        }
+
+        &__adaptive-line {
+            background-color: $font-grey;
+            width: 16px;
+            height: 1px;
+        }
+    }
+
+    .search {
+        display: none;
+    }
+
+    .user {
+        display: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar {
+        &__logo-img {
+            width: 99px;
+        }
+    }
+}

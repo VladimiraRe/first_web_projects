@@ -6,6 +6,11 @@ body {
     color: $font-grey;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 .container {
     width: (1110px / 1440px) * 100vw;
     margin: auto;

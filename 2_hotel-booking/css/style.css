@@ -350,6 +350,11 @@ body {
   color: #333333;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .container {
   width: 77.08333vw;
   margin: auto;
@@ -411,26 +416,6 @@ body {
   font-display: swap;
 }
 
-.navbar__top {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #fff;
-}
-
-.navbar__logo-img {
-  width: 12.29167vw;
-  margin-right: 7.5vw;
-}
-
 .search {
   width: 24.30556vw;
   display: -webkit-box;
@@ -472,12 +457,36 @@ body {
           align-items: center;
 }
 
+.navbar__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+}
+
+.navbar__logo-img {
+  width: 12.29167vw;
+  margin-right: 7.5vw;
+}
+
 .navbar__search {
   margin-right: 25.55556vw;
 }
 
 .navbar-bottom {
   background-color: #0A223D;
+}
+
+.navbar__adaptive-btn {
+  display: none;
 }
 
 .navbar-menu {
@@ -563,6 +572,57 @@ body {
   }
   .navbar__top {
     padding: 30px 0;
+  }
+}
+
+@media (max-width: 720px) {
+  .navbar__top {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .navbar-menu {
+    display: none;
+  }
+  .navbar__logo-img {
+    width: 133px;
+  }
+  .navbar__adaptive-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 11px;
+    border: none;
+    background-color: #FFFFFF;
+    cursor: pointer;
+    padding: 0;
+  }
+  .navbar__adaptive-line {
+    background-color: #333333;
+    width: 16px;
+    height: 1px;
+  }
+  .search {
+    display: none;
+  }
+  .user {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar__logo-img {
+    width: 99px;
   }
 }
 /*# sourceMappingURL=style.css.map */

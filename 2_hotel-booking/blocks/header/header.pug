@@ -4,7 +4,7 @@ header
     .container
         .navbar__top
             a.navbar__logo(href="#")
-            img.navbar__logo-img(src="/2_hotel-booking/blocks/header/img/logo-horizontal.svg", alt="Logo: Best Tour Plan")
+                img.navbar__logo-img(src="/2_hotel-booking/blocks/header/img/logo-horizontal.svg", alt="Logo: Best Tour Plan")
 
 
             block variables
@@ -14,6 +14,10 @@ header
             a.user(href="#") 
                 img.user__avatar(src="/2_hotel-booking/blocks/header/img"+avatar, alt="User Avatar")
                 span.user__name #{username}
+
+            button.navbar__adaptive-btn
+                - for (var x = 0; x < 3; x++)
+                    span.navbar__adaptive-line
 
     .navbar-bottom
         .container

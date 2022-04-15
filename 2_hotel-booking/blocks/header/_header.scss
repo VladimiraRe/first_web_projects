@@ -1,26 +1,30 @@
-.navbar__top {
-    display: flex;
-    justify-content: flex-start;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    align-items: center;
-    background-color: #fff;
-}
-
-.navbar__logo-img {
-    @include adaptive-width(177px);
-    margin-right: (108px / 1440px) * 100vw;
-}
-
 @import "../search/search.scss";
 
 .navbar {
+    &__top {
+        display: flex;
+        justify-content: flex-start;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        align-items: center;
+        background-color: #fff;
+    }
+
+    &__logo-img {
+        @include adaptive-width(177px);
+        margin-right: (108px / 1440px) * 100vw;
+    }
+
     &__search {
         margin-right: (368px / 1440px) * 100vw;
     }
 
     &-bottom {
         background-color: $dark;
+    }
+
+    &__adaptive-btn {
+        display: none;
     }
     
     &-menu {
