@@ -1,3 +1,5 @@
+include ./config.pug
+
 header 
     .container
         .navbar__top
@@ -10,10 +12,9 @@ header
             include ../search/search.pug
 
             a.user(href="#") 
-                img.user__avatar(src="/2_hotel-booking/blocks/header/img/user-avatar.png", alt="User Avatar")
-                span.user__name Nathan
+                img.user__avatar(src="/2_hotel-booking/blocks/header/img"+avatar, alt="User Avatar")
+                span.user__name #{username}
 
-    - var navbarmenu__items = ["All Deals", "Hotels", "Activities", "Hotel Day Packages", "Restaurants", "Events", "Rodrigues"]
     .navbar-bottom
         .container
             nav.navbar-menu

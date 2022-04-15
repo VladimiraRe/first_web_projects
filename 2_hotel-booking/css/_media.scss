@@ -1,0 +1,26 @@
+@media (max-width: 870px) {
+    .navbar {
+        &-menu {
+            &__link {
+                font-size: 13px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        &-menu {
+            padding: 22px 0;
+
+            &__link {
+                font-size: 12px;
+                line-height: 15px;
+            }
+        }
+
+        &__top {
+            padding: 30px 0;
+        }
+    }
+}
