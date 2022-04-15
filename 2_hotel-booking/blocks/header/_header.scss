@@ -1,2 +1,63 @@
-@import "./navbar__top.scss";
-@import "../navbar-menu/navbar-menu";
+.navbar__top {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    align-items: center;
+    background-color: #fff;
+}
+
+.navbar__logo-img {
+    @include adaptive-width(177px);
+    margin-right: (108px / 1440px) * 100vw;
+}
+
+@import "../search/search.scss";
+
+.navbar__search {
+    margin-right: (368px / 1440px) * 100vw;
+}
+
+.user {
+    display: flex;
+    @include adaptive-width(107px);
+    justify-content: flex-start;
+    align-items: center;
+    text-decoration: none;
+    color: $font-grey;
+
+    &__avatar {
+        @include adaptive-width(40px);
+        height: (40px / 1440px) * 100vw;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+    &__name {
+        @include font-mulish(14px, 400, $font-grey, 17.57px);
+        margin-left: (18px / 1440px) * 100vw;
+    }
+}
+
+.navbar-bottom {
+    background-color: $dark;
+}
+
+.navbar-menu__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.navbar-menu__link {
+    text-decoration: none;
+    @include font-mulish(14px, 700, $light, 18px);
+    text-transform: uppercase;
+}
+
+.navbar-menu__item {
+    list-style: none;
+    padding-top: 31px;
+    padding-bottom: 31px;
+}

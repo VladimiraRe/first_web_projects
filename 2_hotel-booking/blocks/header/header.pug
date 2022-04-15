@@ -1,3 +1,23 @@
 header 
-    include ./navbar__top.pug
-    include ../navbar-menu/navbar-menu.pug
+    .container
+        .navbar__top
+            a.navbar__logo(href="#")
+            img.navbar__logo-img(src="/2_hotel-booking/blocks/header/img/logo-horizontal.svg", alt="Logo: Best Tour Plan")
+
+
+            block variables
+                - var element = "navbar__search"
+            include ../search/search.pug
+
+            a.user(href="#") 
+                img.user__avatar(src="/2_hotel-booking/blocks/header/img/user-avatar.png", alt="User Avatar")
+                span.user__name Nathan
+
+    - var navbarmenu__items = ["All Deals", "Hotels", "Activities", "Hotel Day Packages", "Restaurants", "Events", "Rodrigues"]
+    .navbar-bottom
+        .container
+            nav.navbar-menu
+                ul.navbar-menu__list
+                    for i in navbarmenu__items
+                        li.navbar-menu__item
+                            a.navbar-menu__link(href="#") #{i}
