@@ -1,0 +1,18 @@
+include ./config.pug
+
+section.hotel-info
+    .container
+        .hotel-info__wrap
+            .hotel-info__wrapper
+                .hotel-info__stars
+                    - for (var x=0; x<5; x++)
+                        img(src=img+"hotel-info/img/star.svg", alt="Star").hotel-info__star
+                h1.hotel-info__name #{hotel}
+                if isFlashOffer
+                    span.hotel-info__offer Flash Offer
+            .hotel-info__ratting
+                span.hotel-info__ratting-text User Rattings
+                span.hotel-info__counter #{rattings}
+                span.hotel-info__maxratting 5
+        p.hotel-info__description #{description}
+    
