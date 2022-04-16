@@ -2,12 +2,15 @@
 
 .navbar {
     &__top {
+        background-color: $light;
+    }
+    
+    &__wrap {
         display: flex;
         justify-content: flex-start;
         padding-top: 40px;
         padding-bottom: 40px;
         align-items: center;
-        background-color: #fff;
     }
 
     &__logo-img {

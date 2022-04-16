@@ -1,0 +1,33 @@
+.breadcrumb {
+    height: 34px;
+    display: flex;
+    align-items: center;
+
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        margin: 0;
+        padding: 0;
+    }
+
+    &__item {
+        list-style: none;
+    }
+
+    &__link {
+        text-decoration: none;
+        padding: 0;
+        @include font-mulish(10px, 400, $font-grey, 13px);
+    }
+
+    &__item + &__item::before {
+        content: "/";
+        padding: 0 2px;
+        @include font-mulish(10px, 400, $font-grey, 13px);
+    }
+
+    &__link--active {
+        pointer-events: none;
+    }
+}

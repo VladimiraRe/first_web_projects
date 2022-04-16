@@ -19,15 +19,19 @@
             }
         }
 
-        &__top {
+        &__wrap {
             padding: 30px 0;
+        }
+
+        &__logo-img {
+            width: (133px/768px)*100vw;
         }
     }
 }
 
 @media (max-width: 720px) {
     .navbar {
-        &__top {
+        &__wrap {
             justify-content: space-between;
         }
 
