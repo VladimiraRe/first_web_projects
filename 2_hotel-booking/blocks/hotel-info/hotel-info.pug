@@ -5,7 +5,7 @@ section.hotel-info
         .hotel-info__wrap
             .hotel-info__wrapper
                 .hotel-info__stars
-                    - for (var x=0; x<5; x++)
+                    - for (var x=0; x<star_counter; x++)
                         img(src=img+"hotel-info/img/star.svg", alt="Star").hotel-info__star
                 h1.hotel-info__name #{hotel}
                 if isFlashOffer

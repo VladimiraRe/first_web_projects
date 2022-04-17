@@ -6,8 +6,8 @@
     align-items: baseline;
     justify-content: center;
     align-content: center;
-    width: 65px;
-    height: 45px;
+    max-width: 65px;
+    min-height: 45px;
 
     &__text {
         flex-basis: 100%;
