@@ -10,9 +10,7 @@ section.hotel-info
                 h1.hotel-info__name #{hotel}
                 if isFlashOffer
                     span.hotel-info__offer Flash Offer
-            .hotel-info__ratting
-                span.hotel-info__ratting-text User Rattings
-                span.hotel-info__counter #{rattings}
-                span.hotel-info__maxratting 5
+            include ../rating/rating.pug
+            
         p.hotel-info__description #{description}
     

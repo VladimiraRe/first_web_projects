@@ -71,10 +71,40 @@
     }
 }
 
+@media (max-width: 600px) {
+    .rating {
+        display: none;
+    }
+}
+
 @media (max-width: 576px) {
     .navbar {
         &__logo-img {
             width: 99px;
         }
     }
+
+    .hotel-info {
+        &__wrapper {
+            justify-content: space-between;
+        }
+
+        &__name {
+            flex-basis: 100%;
+            margin: auto;
+        }
+
+        &__offer {
+            order: -1;
+            margin: 0;
+        }
+
+        &__stars {
+            flex-basis: auto;
+        }
+    }
+}
+
+@media (max-width: 350px) {
+
 }

@@ -1,0 +1,31 @@
+.rating {
+    background-color: $red;
+    border-radius: 4px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: center;
+    align-content: center;
+    width: 65px;
+    height: 45px;
+
+    &__text {
+        flex-basis: 100%;
+        text-align: center;
+        @include font-mulish(8px, 600, $light, 10px);
+    }
+
+    &__counter {
+        @include font-mulish(10px, 700, $light, 13px);
+
+        &::after {
+            content: "/"
+        }
+    }
+
+    &__max {
+        align-self: flex-end;
+        align-self: baseline;
+        @include font-mulish(8px, 700, $light, 13px);
+    }
+}

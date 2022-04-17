@@ -1,3 +1,5 @@
+@import "../rating/rating.scss";
+
 .hotel-info {
     &__wrap {
         display: flex;
@@ -37,45 +39,14 @@
         margin: 4px 0 0 23px;
         background-color: $red;
         border-radius: 3px;
-        @include font-mulish(10px, 600, $light, 13px)
+        @include font-mulish(10px, 600, $light, 13px);
     }
 
     &__description {
         margin: 0;
     }
 
-    &__counter::after {
-        content: "/"
-    }
-
-    &__ratting {
-        background-color: $red;
-        border-radius: 4px;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: baseline;
-        justify-content: center;
-        align-content: center;
-        width: 65px;
-        height: 45px;
-    }
-
-    &__ratting-text {
-        margin: auto;
-        @include font-mulish(8px, 600, $light, 10px) 
-    }
-
-    &__counter {
-        @include font-mulish(10px, 700, $light, 13px)
-    }
-
-    &__maxratting {
-        align-self: flex-end;
-        align-self: baseline;
-        @include font-mulish(8px, 700, $light, 13px)
-    }
-
     &__description {
-        @include font-mulish(12px, 400, $font-grey, 15px)
+        @include font-mulish(12px, 400, $font-grey, 15px);
     }
 }
