@@ -1,0 +1,85 @@
+.booking {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: $dark;
+    color: $light;
+    border-radius: 8px;
+
+    &__container {
+        @include adaptive-width(295px);
+        margin: 29px 29px 26px 26px;
+    }
+
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 9px;
+    }
+
+    &__price {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__price-start {
+        @include font-nunito(10px, 400, inherit, 14px);
+    }
+
+    &__price-tag {
+        @include font-nunito(24px, 800, inherit, 33px);
+    }
+
+    &__per-room {
+        @include font-nunito(12px, 400, inherit, 16px);
+    }
+
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 8px;
+
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+
+    &__icon {
+        margin-right: 9px;
+
+        &--home {
+            padding: 1.17px 1.5px;
+        }
+    }
+
+    &__call-centre {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 17px;
+    }
+
+    &__quick {
+        @include font-nunito(18px, 600, inherit, 24px);
+    }
+
+    &__phone-icon {
+        padding-right: 8px;
+    }
+
+    &__tel {
+        text-decoration: none;
+        @include font-nunito(18px, 600, inherit, 24px);
+    }
+
+    &__button {
+        padding: 13px 0;
+        width: 100%;
+        background-color: $red;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        @include font-nunito(14px, 600, $light, 19px);
+    }
+}

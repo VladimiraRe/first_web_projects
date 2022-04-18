@@ -10,10 +10,13 @@ section.hotel-info
                 h1.hotel-info__name #{hotel}
                 if isFlashOffer
                     span.hotel-info__offer Flash Offer
-            include ../rating/rating.pug
+            include ./rating/rating.pug
             
         p.hotel-info__description #{description}
         .hotel-info__grid
-            include ../slider/slider.pug
+            include ./slider/slider.pug
+            .hotel-info__right-wrap
+                include ./booking/booking.pug
+                .hotel-info__map
 
     

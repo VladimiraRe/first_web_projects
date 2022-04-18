@@ -1,4 +1,9 @@
-@import "../rating/rating.scss";
+// Подключение стилей Рейтинга
+@import "./rating/rating.scss";
+//Подключение стилей слайдера
+@import "./slider/css/slider.scss";
+//Подключение бронирования
+@import "./booking/booking";
 
 .hotel-info {
     &__wrap {
@@ -44,4 +49,28 @@
     &__description {
         @include font-mulish(12px, 400, $font-grey, 15px);
     }
+
+    &__grid {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__right-wrap {
+        flex-basis: calc(350/1105*100%);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__map {
+        width: 100%;
+        height: 213px;
+        background-color: black;
+        border-radius: 10px;
+    }
+}
+
+.swiper {
+    flex-basis: calc(728/1105*100%);
 }

@@ -9,3 +9,11 @@
     color: $color;
     line-height: $lh;
 }
+
+@mixin font-nunito($fs, $fw, $color, $lh) {
+    font-family: "Nunito", serif;
+    font-size: $fs;
+    font-weight: $fw;
+    color: $color;
+    line-height: $lh;
+}

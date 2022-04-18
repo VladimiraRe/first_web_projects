@@ -668,78 +668,6 @@ img {
   line-height: 13px;
 }
 
-.hotel-info__wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.hotel-info__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.hotel-info__stars {
-  height: 6px;
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.hotel-info_text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.hotel-info__name {
-  margin: 4px 0 0 0;
-  font-family: "Mulish", serif;
-  font-size: 24px;
-  font-weight: 700;
-  color: #333333;
-  line-height: 30px;
-  text-transform: uppercase;
-}
-
-.hotel-info__offer {
-  padding: 3px 9px;
-  margin: 4px 0 0 23px;
-  background-color: #EC1F46;
-  border-radius: 3px;
-  font-family: "Mulish", serif;
-  font-size: 10px;
-  font-weight: 600;
-  color: #FFFFFF;
-  line-height: 13px;
-}
-
-.hotel-info__description {
-  margin: 0 0 20px 0;
-}
-
-.hotel-info__description {
-  font-family: "Mulish", serif;
-  font-size: 12px;
-  font-weight: 400;
-  color: #333333;
-  line-height: 15px;
-}
-
 /**
  * Swiper 8.1.1
  * Most modern mobile touch slider and framework with hardware accelerated transitions
@@ -1576,7 +1504,7 @@ button.swiper-pagination-bullet {
   z-index: 3;
   border: none;
   background: none;
-  background-image: url("/2_hotel-booking/blocks/slider/img/button-prev.svg");
+  background-image: url("/2_hotel-booking/blocks/hotel-info/slider/img/button-prev.svg");
   background-size: 10px;
   background-repeat: no-repeat;
   background-position: center;
@@ -1590,7 +1518,7 @@ button.swiper-pagination-bullet {
   z-index: 4;
   border: none;
   background: none;
-  background-image: url("/2_hotel-booking/blocks/slider/img/button-next.svg");
+  background-image: url("/2_hotel-booking/blocks/hotel-info/slider/img/button-next.svg");
   background-size: 10px;
   background-repeat: no-repeat;
   background-position: center;
@@ -1598,6 +1526,255 @@ button.swiper-pagination-bullet {
   max-height: 30px;
   right: 0;
   margin-right: 16px;
+}
+
+.booking {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #0A223D;
+  color: #FFFFFF;
+  border-radius: 8px;
+}
+
+.booking__container {
+  width: 20.48611vw;
+  margin: 29px 29px 26px 26px;
+}
+
+.booking__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 9px;
+}
+
+.booking__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.booking__price-start {
+  font-family: "Nunito", serif;
+  font-size: 10px;
+  font-weight: 400;
+  color: inherit;
+  line-height: 14px;
+}
+
+.booking__price-tag {
+  font-family: "Nunito", serif;
+  font-size: 24px;
+  font-weight: 800;
+  color: inherit;
+  line-height: 33px;
+}
+
+.booking__per-room {
+  font-family: "Nunito", serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: inherit;
+  line-height: 16px;
+}
+
+.booking__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 8px;
+}
+
+.booking__wrap:first-child {
+  margin-top: 0;
+}
+
+.booking__icon {
+  margin-right: 9px;
+}
+
+.booking__icon--home {
+  padding: 1.17px 1.5px;
+}
+
+.booking__call-centre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 17px;
+}
+
+.booking__quick {
+  font-family: "Nunito", serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: inherit;
+  line-height: 24px;
+}
+
+.booking__phone-icon {
+  padding-right: 8px;
+}
+
+.booking__tel {
+  text-decoration: none;
+  font-family: "Nunito", serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: inherit;
+  line-height: 24px;
+}
+
+.booking__button {
+  padding: 13px 0;
+  width: 100%;
+  background-color: #EC1F46;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: "Nunito", serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #FFFFFF;
+  line-height: 19px;
+}
+
+.hotel-info__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hotel-info__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hotel-info__stars {
+  height: 6px;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hotel-info_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hotel-info__name {
+  margin: 4px 0 0 0;
+  font-family: "Mulish", serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #333333;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.hotel-info__offer {
+  padding: 3px 9px;
+  margin: 4px 0 0 23px;
+  background-color: #EC1F46;
+  border-radius: 3px;
+  font-family: "Mulish", serif;
+  font-size: 10px;
+  font-weight: 600;
+  color: #FFFFFF;
+  line-height: 13px;
+}
+
+.hotel-info__description {
+  margin: 0 0 20px 0;
+}
+
+.hotel-info__description {
+  font-family: "Mulish", serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #333333;
+  line-height: 15px;
+}
+
+.hotel-info__grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.hotel-info__right-wrap {
+  -ms-flex-preferred-size: calc(350/1105*100%);
+      flex-basis: calc(350/1105*100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hotel-info__map {
+  width: 100%;
+  height: 213px;
+  background-color: black;
+  border-radius: 10px;
+}
+
+.swiper {
+  -ms-flex-preferred-size: calc(728/1105*100%);
+      flex-basis: calc(728/1105*100%);
 }
 
 @media (max-width: 870px) {
