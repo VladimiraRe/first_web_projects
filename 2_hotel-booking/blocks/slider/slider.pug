@@ -1,12 +1,10 @@
-<!-- Slider main container -->
+include ./config.pug
+
 .swiper
     .swiper-wrapper
-        .swiper-slide
-            img(src="/2_hotel-booking/blocks/slider/img/slide-1.jpg", alt="Slider")
-        .swiper-slide
-            img(src="/2_hotel-booking/blocks/slider/img/slide-1.jpg", alt="Slider")
-        .swiper-slide
-            img(src="/2_hotel-booking/blocks/slider/img/slide-1.jpg", alt="Slider")
+        for i in hotelPhotos
+            .swiper-slide
+                img(src=i alt="Slider")
 
     button.swiper__btn.swiper-button-prev
     button.swiper__btn.swiper-button-next
