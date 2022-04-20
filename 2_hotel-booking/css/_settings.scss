@@ -14,7 +14,8 @@ img {
 }
 
 .container {
-    width: (1110px / 1440px) * 100vw;
+    width: 1110px/1440px * 100%;
+    max-width: 1110px;
     margin: auto;
 }
 

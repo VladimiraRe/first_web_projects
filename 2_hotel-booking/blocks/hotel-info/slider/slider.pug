@@ -1,10 +1,10 @@
 include ./config.pug
 
-.swiper
+.swiper.hotel-info__swiper
     .swiper-wrapper
         for i in hotelPhotos
             .swiper-slide
-                img(src=i alt="Slider")
+                img(src=i alt="Slider").hotel-info__swiper-img
 
     button.swiper__btn.swiper-button-prev
     button.swiper__btn.swiper-button-next
