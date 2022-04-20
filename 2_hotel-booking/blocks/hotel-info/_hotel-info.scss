@@ -58,6 +58,7 @@
     &__swiper {
         flex-grow: 1;
         margin-right: 30px;
+        flex-shrink: 0;
     }
 
     &__right-wrap {
