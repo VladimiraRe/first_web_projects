@@ -1791,6 +1791,10 @@ button.swiper-pagination-bullet {
   overflow: hidden;
 }
 
+.hotel-info {
+  margin-bottom: 70px;
+}
+
 .subscribe {
   position: relative;
   background-image: url(/2_hotel-booking/blocks/subscribe/subscribe__img.jpg);
@@ -1812,6 +1816,7 @@ button.swiper-pagination-bullet {
   position: relative;
   max-width: 731px;
   padding: 98px 0 87px 0;
+  min-height: 260px;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1849,13 +1854,16 @@ button.swiper-pagination-bullet {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   overflow: hidden;
   border-radius: 6px;
 }
 
 .subscribe__input {
   width: 285px;
-  height: 40px;
+  min-height: 40px;
   border: none;
   background-color: #F5FAFE;
   padding-left: 1.59722vw;
@@ -1873,11 +1881,11 @@ button.swiper-pagination-bullet {
   font-weight: 700;
   color: #FFFFFF;
   line-height: 15px;
-  width: 65px;
-  height: 40px;
+  min-width: 65px;
+  min-height: 40px;
   border: none;
   background-color: #EC1F46;
-  padding: 0;
+  padding: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1887,6 +1895,30 @@ button.swiper-pagination-bullet {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media (min-width: 1440px) {
+  .navbar__wrap {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .navbar__logo-img {
+    width: 177px;
+    margin-right: none;
+  }
+  .navbar__logo-img__search {
+    margin-right: none;
+  }
+  .navbar .search {
+    max-width: 350px;
+  }
+  .navbar .search__input {
+    max-width: 285px;
+  }
+  .navbar .search__button {
+    max-width: 65px;
+  }
 }
 
 @media (max-width: 1345px) {
@@ -1956,6 +1988,9 @@ button.swiper-pagination-bullet {
   }
   .navbar__logo-img {
     width: 17.31771vw;
+  }
+  .hotel-info {
+    margin-bottom: 60px;
   }
 }
 
@@ -2031,6 +2066,30 @@ button.swiper-pagination-bullet {
     -ms-flex-preferred-size: auto;
         flex-basis: auto;
   }
+  .subscribe__wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 0 0;
+  }
+  .subscribe__title {
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  .subscribe__strong {
+    font-size: 30px;
+  }
+  .subscribe__form {
+    max-width: 350px;
+    width: 100%;
+  }
 }
 
 @media (max-width: 660px) {
@@ -2041,7 +2100,7 @@ button.swiper-pagination-bullet {
             flex-direction: column;
   }
   .hotel-info__swiper {
-    margin-bottom: 20px;
+    margin-bottom: 37px;
   }
   .hotel-info__booking {
     max-width: none;
