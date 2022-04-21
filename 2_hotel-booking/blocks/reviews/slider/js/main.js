@@ -1,4 +1,4 @@
-const hotel__slider = new Swiper('.swiper', {
+const reviews__slider = new Swiper('.swiper', {
     // Optional parameters
     loop: true,
 
