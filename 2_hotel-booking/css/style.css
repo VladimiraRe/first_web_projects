@@ -1484,20 +1484,6 @@ button.swiper-pagination-bullet {
   border-radius: 8px;
 }
 
-.swiper::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 122, 223, 0.48)), to(rgba(255, 255, 255, 0.128)));
-  background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
-  z-index: 2;
-}
-
 .swiper-button-prev {
   z-index: 3;
   border: none;
@@ -1754,6 +1740,25 @@ button.swiper-pagination-bullet {
   margin-right: 30px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+}
+
+.hotel-info__slider-item {
+  position: relative;
+  z-index: 1;
+}
+
+.hotel-info__slider-item::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 122, 223, 0.48)), to(rgba(255, 255, 255, 0.128)));
+  background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
+  z-index: 2;
 }
 
 .hotel-info__right-wrap {
@@ -2698,20 +2703,6 @@ button.swiper-pagination-bullet {
   border-radius: 8px;
 }
 
-.swiper::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 122, 223, 0.48)), to(rgba(255, 255, 255, 0.128)));
-  background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
-  z-index: 2;
-}
-
 .swiper-button-prev {
   z-index: 3;
   border: none;
@@ -2738,6 +2729,56 @@ button.swiper-pagination-bullet {
   max-height: 30px;
   right: 0;
   margin-right: 16px;
+}
+
+.reviews__title {
+  font-family: "Mulish", serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: #333333;
+  line-height: 45px;
+  text-transform: uppercase;
+}
+
+.reviews__avatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.reviews__name {
+  font-family: "Mulish", serif;
+  font-size: 12px;
+  font-weight: 700;
+  color: #EC1F46;
+  line-height: 15px;
+}
+
+.reviews__stayed {
+  font-family: "Mulish", serif;
+  font-size: 10px;
+  font-weight: 400;
+  color: #333333;
+  line-height: 12.5px;
+}
+
+.reviews__stars {
+  height: 6px;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.reviews__review {
+  font-family: "Mulish", serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #333333;
+  line-height: 19px;
 }
 
 @media (min-width: 1440px) {

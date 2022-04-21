@@ -3,9 +3,17 @@ include ../config.pug
 
 .swiper.reviews__swiper
     .swiper-wrapper
-        for i in hotelPhotos
-            .swiper-slide
-                img(src=i alt="Slider").hotel-info__swiper-img
+        .swiper-slide
+            for i in reviews
+                img(src=i.reviewAvatar, alt="i.name").reviews__avatar
+                span.reviews__name #{i.name}
+                span.reviews__stayed #{i.stayed}
+                .reviews__stars
+                    - var stars = i.stars
+                    - for (var x=0; x<stars; x++)
+                        img(src="/2_hotel-booking/blocks/reviews/slider/img/star.svg", alt="Star").reviews__star
+                p.reviews__review #{i.review}
+
 
     button.swiper__btn.swiper-button-prev
     button.swiper__btn.swiper-button-next

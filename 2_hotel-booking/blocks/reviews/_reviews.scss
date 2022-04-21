@@ -1,2 +1,34 @@
 // Подключение стилей слайдера
-@import "./slider/css/slider"
+@import "./slider/css/slider";
+
+.reviews {
+    &__title {
+        @include font-mulish(36px, 700, $font-grey, 45px);
+        text-transform: uppercase;
+    }
+
+    &__avatar {
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    &__name {
+        @include font-mulish(12px, 700, $red, 15px);
+    }
+
+    &__stayed {
+        @include font-mulish(10px, 400, $font-grey, 12.5px);
+    }
+
+    &__stars {
+        height: 6px;
+        flex-basis: 100%;
+        display: flex;
+    }
+
+    &__review {
+        @include font-mulish(12px, 400, $font-grey, 19px);
+    }
+}
