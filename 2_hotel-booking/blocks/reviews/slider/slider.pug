@@ -3,20 +3,22 @@ include ../config.pug
 
 .swiper.reviews__swiper
     .swiper-wrapper
-        .swiper-slide
-            for i in reviews
-                img(src=i.reviewAvatar, alt="i.name").reviews__avatar
-                span.reviews__name #{i.name}
-                span.reviews__stayed #{i.stayed}
-                .reviews__stars
-                    - var stars = i.stars
-                    - for (var x=0; x<stars; x++)
-                        img(src="/2_hotel-booking/blocks/reviews/slider/img/star.svg", alt="Star").reviews__star
-                p.reviews__review #{i.review}
+        for i in reviews
+            .swiper-slide
+                .reviews__slider-item
+                    .reviews__profile
+                        img(src=i.reviewAvatar, alt="i.name").reviews__avatar
+                        span.reviews__name #{i.name}
+                        span.reviews__stayed #{i.stayed}
+                        .reviews__stars
+                            - var stars = i.stars
+                            - for (var x=0; x<stars; x++)
+                                img(src="/2_hotel-booking/blocks/reviews/slider/img/star.svg", alt="Star").reviews__star
+                    p.reviews__review #{i.review}
 
 
-    button.swiper__btn.swiper-button-prev
-    button.swiper__btn.swiper-button-next
+    button.swiper__btn.swiper-button-prev.reviews__btn-prev
+    button.swiper__btn.swiper-button-next.reviews__btn-next
 
 script(src=path+"slider/js/swiper-bundle.min.js")
 script(src=path+"slider/js/swiper-bundle.min.js.map")

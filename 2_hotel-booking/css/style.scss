@@ -26,8 +26,16 @@
 //Подключение стилей подписки
 @import "../blocks/subscribe/subscribe";
 
+.subscribe {
+    margin-bottom: 40px;
+}
+
 //Подключение стилей отзывов
 @import "../blocks/reviews/reviews";
+
+.reviews {
+    margin-bottom: 70px;
+}
 
 //Подключение стилей для адаптива
 @import "./media";
