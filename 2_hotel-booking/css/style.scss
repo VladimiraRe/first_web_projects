@@ -37,5 +37,8 @@
     margin-bottom: 70px;
 }
 
+//Подключение стилей активностей
+@import "../blocks/activities/activities";
+
 //Подключение стилей для адаптива
 @import "./media";

@@ -1,0 +1,48 @@
+.activities {
+    padding: 60px 0 98px 0;
+
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__card {
+        position: relative;
+        height: 255px;
+        max-width: 255px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: linear-gradient(179.83deg, rgba(196, 196, 196, 0) 35.34%, #0A223D 99.85%);
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__img {
+        height: 100%;
+        max-width: 100%;
+        border-radius: 6px;
+    }
+
+    &__description {
+        @include font-mulish(16px, 700, $light, 20px);
+        max-width: 200px;
+        margin: 0;
+        padding: 0 0 18px 26px;
+    }
+
+    &__btn {
+        position: absolute;
+        bottom: 24px;
+        left: 26px;
+        background-color: $red;
+        border: none;
+        padding: 7px 21px;
+        color: $light;
+        border-radius: 4px;
+    }
+}

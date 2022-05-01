@@ -7,7 +7,7 @@ include ../config.pug
             .swiper-slide
                 .reviews__slider-item
                     .reviews__profile
-                        img(src=i.reviewAvatar, alt="i.name").reviews__avatar
+                        img(src=i.reviewAvatar, alt="#{i.name}").reviews__avatar
                         span.reviews__name #{i.name}
                         span.reviews__stayed #{i.stayed}
                         .reviews__stars

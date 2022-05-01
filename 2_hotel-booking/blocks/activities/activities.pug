@@ -1,0 +1,11 @@
+include ./config.pug
+
+section.activities
+    .container
+        h2.activities__title Other Activities
+        .activities__wrap
+            for i in activity
+                .activities__card
+                    img(src=i.img, alt=i.title).activities__img
+                    h3.activities__description #{i.title}
+                    button.activities__btn Book Now
