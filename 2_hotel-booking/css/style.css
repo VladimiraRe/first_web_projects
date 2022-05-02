@@ -1652,6 +1652,10 @@ button.swiper-pagination-bullet {
   line-height: 19px;
 }
 
+.hotel-info {
+  padding-bottom: 70px;
+}
+
 .hotel-info__wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1793,10 +1797,6 @@ button.swiper-pagination-bullet {
   overflow: hidden;
 }
 
-.hotel-info {
-  margin-bottom: 70px;
-}
-
 .subscribe {
   position: relative;
   background-position-y: 40%;
@@ -1897,10 +1897,6 @@ button.swiper-pagination-bullet {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.subscribe {
-  margin-bottom: 40px;
 }
 
 /**
@@ -2735,6 +2731,10 @@ button.swiper-pagination-bullet {
   margin-right: 16px;
 }
 
+.reviews {
+  padding: 40px 0 70px 0;
+}
+
 .reviews__title {
   font-family: "Mulish", serif;
   font-size: 36px;
@@ -2869,12 +2869,12 @@ button.swiper-pagination-bullet {
   overflow: scroll;
 }
 
-.reviews {
-  margin-bottom: 70px;
-}
-
 .activities {
   padding: 60px 0 98px 0;
+}
+
+.activities__title {
+  margin: 0 0 57px 0;
 }
 
 .activities__wrap {
@@ -2889,7 +2889,20 @@ button.swiper-pagination-bullet {
 .activities__card {
   position: relative;
   height: 255px;
-  max-width: 255px;
+  width: 255px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  border-radius: 6px;
+  overflow: hidden;
+  padding: 24px 26px;
 }
 
 .activities__card::before {
@@ -2897,15 +2910,25 @@ button.swiper-pagination-bullet {
   position: absolute;
   top: 0;
   left: 0;
+  right: 0;
+  bottom: 0;
   background: linear-gradient(179.83deg, rgba(196, 196, 196, 0) 35.34%, #0A223D 99.85%);
   width: 100%;
   height: 100%;
+  z-index: -1;
 }
 
 .activities__img {
   height: 100%;
-  max-width: 100%;
-  border-radius: 6px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -2;
 }
 
 .activities__description {
@@ -2914,13 +2937,10 @@ button.swiper-pagination-bullet {
   font-weight: 700;
   color: #FFFFFF;
   line-height: 20px;
-  max-width: 200px;
-  margin: 0;
-  padding: 0 0 18px 26px;
+  margin: auto 0 18px 0;
 }
 
 .activities__btn {
-  position: absolute;
   bottom: 24px;
   left: 26px;
   background-color: #EC1F46;
@@ -2928,6 +2948,7 @@ button.swiper-pagination-bullet {
   padding: 7px 21px;
   color: #FFFFFF;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 @media (min-width: 1440px) {

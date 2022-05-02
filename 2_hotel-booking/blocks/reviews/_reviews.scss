@@ -4,6 +4,7 @@ $path: "/2_hotel-booking/blocks/reviews/slider/img/";
 @import "./slider/css/slider";
 
 .reviews {
+    padding: 40px 0 70px 0;
 
     &__title {
         @include font-mulish(36px, 700, $font-grey, 45px);

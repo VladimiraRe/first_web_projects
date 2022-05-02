@@ -6,6 +6,8 @@
 @import "./booking/booking";
 
 .hotel-info {
+    padding-bottom: 70px;
+
     &__wrap {
         display: flex;
         justify-content: space-between;
