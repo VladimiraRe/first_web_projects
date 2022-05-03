@@ -69,6 +69,28 @@
     }
 }
 
+@media (max-width: 984px) {
+    .reviews {
+        padding-bottom: 50px;
+        padding-top: 40px;
+    }
+
+    .activities {
+        &__wrap {
+            flex-wrap: wrap;
+        }
+
+        &__card {
+            max-width: 47%;
+            margin-bottom: 20px;
+
+            &:nth-child(even) {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
 @media (max-width: 992px) {
     .reviews {
         &__title {
@@ -273,6 +295,25 @@
     }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 548px) {
+    .reviews {
+        padding-bottom: 50px;
+        padding-bottom: 60px;
+    }
 
+    .activities {
+        padding-top: 40px;
+
+        &__title {
+            margin-bottom: 36px;
+        }
+
+        &__card {
+            max-width: 100%;
+
+            &:nth-child(odd) {
+                margin-right: 0;
+            }
+        }
+    }
 }
