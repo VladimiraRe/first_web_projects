@@ -1,0 +1,142 @@
+.packages {
+    padding: 40px 0 70px 0;
+
+    &__title {
+        @include font-mulish(36px, 700, $font-grey, 45px);
+        text-transform: uppercase;
+        text-align: center;
+        margin: 0 0 65px 0;
+    }
+
+    &__wrap {
+        display: grid;
+        grid-template: 500px 500px / repeat(3, 1fr);
+        gap: 30px;
+
+    }
+
+    &__card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        height: 500px;
+        border-radius: 8px;
+        overflow: hidden;
+        
+
+        &:first-child {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            flex-direction: row;
+
+            & .packages__description {
+                display: block;
+                @include font-mulish(14px, 400, $light, 22px);
+                text-align: justify;
+            }
+
+            & .packages__img {
+                height: 500px;
+                min-width: 50%;
+            }
+
+            & .packages__info {
+                padding: 46px 21px 30px 43px;
+            }
+
+            & .packages__stars {
+                display: flex;
+            }
+        }
+    }
+
+    &__img {
+        object-fit: cover;
+        height: 50%;
+        min-width: 100%;
+        overflow: hidden;
+    }
+
+    &__offer {
+        position: absolute;
+        top: 26px;
+        left: 0;
+        width: 86px;
+        height: 18px;
+        background-color: $red;
+        @include font-mulish(8px, 600, $light, 10px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0 4px 4px 0;
+    }
+
+    &__info {
+        min-height: 50%;
+        min-width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: $dark;
+        padding: 30px 21px 25px 32px;
+    }
+
+    &__stars {
+        display: none;
+    }
+
+    &__star {
+        width: 8px;
+        height: 8px;
+    }
+
+    &__name {
+        @include font-mulish(18px, 700, $light, 22px);
+        margin: 0;
+    }
+
+    &__description {
+        display: none;
+    }
+
+    &__bookInfoWrap {
+        @include font-mulish(12px, 400, $light, 15px);
+        height: 65.42px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__icon {
+        padding-right: 15.17px;
+    }
+
+    &__book {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__priceWrap {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__oldPrice {
+        @include font-mulish(14px, 400, $light, 17px);
+        text-decoration: line-through;
+        margin-bottom: 5px;
+    }
+
+    &__price {
+        @include font-mulish(24px, 700, $light, 30px);
+    }
+
+    &__btn {
+        background-color: $red;
+        border: none;
+        padding: 10px 26px;
+        border-radius: 4px;
+        @include font-mulish(14px, 600, $light, 19px);
+        cursor: pointer;
+    }
+}

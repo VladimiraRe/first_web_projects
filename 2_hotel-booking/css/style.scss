@@ -19,13 +19,16 @@
 //Подключение стилей информации об отеле
 @import "../blocks/hotel-info/hotel-info";
 
+//Подключение стилей других предложений
+@import "../blocks/packages/packages";
+
 //Подключение стилей подписки
 @import "../blocks/subscribe/subscribe";
 
 //Подключение стилей отзывов
 @import "../blocks/reviews/reviews";
 
-//Подключение стилей активностей
+//Подключение стилей развлечений
 @import "../blocks/activities/activities";
 
 //Подключение стилей для адаптива

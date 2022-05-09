@@ -1,0 +1,35 @@
+include ./config.pug
+
+section.packages
+    .container
+        h2.packages__title Other Packages
+        .packages__wrap
+            for i in allPackages
+                .packages__card
+                    img(src=i.img, alt=i.name).packages__img
+                    span.packages__offer Flash Offer
+                    .packages__info
+                        .packages__nameWrap
+                            .packages__stars
+                                - for (var x=0; x<5; x++)
+                                    img(src=path+"star.svg", alt="Star icon").packages__star
+                            h3.packages__name #{i.name}
+                        p.packages__description #{i.description}
+                        .packages__bookInfoWrap
+                            .packages__bookInfo
+                                img(src=path+"location.svg", alt="Location icon").packages__icon
+                                span.packages__text #{i.location}
+                            .packages__bookInfo
+                                img(src=path+"user.svg", alt="User icon").packages__icon
+                                span.packages__text 2 x Guests
+                            .packages__bookInfo
+                                img(src=path+"home.svg", alt="Home icon").packages__icon
+                                span.packages__text 1 x Room
+                        .packages__book
+                            .packages__priceWrap
+                                span.packages__oldPrice #{i.oldPrice}
+                                span.packages__price #{i.currentPrice}
+                            button.packages__btn Book Now
+
+
+

@@ -1797,6 +1797,223 @@ button.swiper-pagination-bullet {
   overflow: hidden;
 }
 
+.packages {
+  padding: 40px 0 70px 0;
+}
+
+.packages__title {
+  font-family: "Mulish", serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: #333333;
+  line-height: 45px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 0 65px 0;
+}
+
+.packages__wrap {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 500px 500px;
+  -ms-grid-columns: (1fr)[3];
+      grid-template: 500px 500px/repeat(3, 1fr);
+  gap: 30px;
+}
+
+.packages__card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 500px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.packages__card:first-child {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.packages__card:first-child .packages__description {
+  display: block;
+  font-family: "Mulish", serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #FFFFFF;
+  line-height: 22px;
+  text-align: justify;
+}
+
+.packages__card:first-child .packages__img {
+  height: 500px;
+  min-width: 50%;
+}
+
+.packages__card:first-child .packages__info {
+  padding: 46px 21px 30px 43px;
+}
+
+.packages__card:first-child .packages__stars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.packages__img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 50%;
+  min-width: 100%;
+  overflow: hidden;
+}
+
+.packages__offer {
+  position: absolute;
+  top: 26px;
+  left: 0;
+  width: 86px;
+  height: 18px;
+  background-color: #EC1F46;
+  font-family: "Mulish", serif;
+  font-size: 8px;
+  font-weight: 600;
+  color: #FFFFFF;
+  line-height: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 0 4px 4px 0;
+}
+
+.packages__info {
+  min-height: 50%;
+  min-width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #0A223D;
+  padding: 30px 21px 25px 32px;
+}
+
+.packages__stars {
+  display: none;
+}
+
+.packages__star {
+  width: 8px;
+  height: 8px;
+}
+
+.packages__name {
+  font-family: "Mulish", serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #FFFFFF;
+  line-height: 22px;
+  margin: 0;
+}
+
+.packages__description {
+  display: none;
+}
+
+.packages__bookInfoWrap {
+  font-family: "Mulish", serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #FFFFFF;
+  line-height: 15px;
+  height: 65.42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.packages__icon {
+  padding-right: 15.17px;
+}
+
+.packages__book {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.packages__priceWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.packages__oldPrice {
+  font-family: "Mulish", serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #FFFFFF;
+  line-height: 17px;
+  text-decoration: line-through;
+  margin-bottom: 5px;
+}
+
+.packages__price {
+  font-family: "Mulish", serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #FFFFFF;
+  line-height: 30px;
+}
+
+.packages__btn {
+  background-color: #EC1F46;
+  border: none;
+  padding: 10px 26px;
+  border-radius: 4px;
+  font-family: "Mulish", serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #FFFFFF;
+  line-height: 19px;
+  cursor: pointer;
+}
+
 .subscribe {
   position: relative;
   background-position-y: 40%;
