@@ -1,52 +1,66 @@
 include ./config.pug
 
-footer
+footer.footer
     .container
-        .footer__wrap
+        .footer__wrap.footer__wrap--top
             img(src=path+"logo-vertical.svg", alt="Logo: Best Tour Plan").footer__logo
-            ul.footer__list
+            .footer__list.footer__categories
                 h3.footer__title All categories
-                for i in categoriesItems
-                    li.footer__item
-                        a.footer__link(href=i.link) #{i.name}
-            ul.footer__list
+                ul.footer__ul
+                    for i in categoriesItems
+                        li.footer__item
+                            a.footer__link(href=i.link) #{i.name}
+            .footer__list.footer__additinal
                 h3.footer__title ADDITIONAL INFORMATION
-                for j in additionalInformation
-                    li.footer__item
-                        a.footer__link(href=j.link) #{j.name}
+                ul.footer__ul
+                    for j in additionalInformation
+                        li.footer__item
+                            a.footer__link(href=j.link) #{j.name}
             .footer__socialnetwork
-                h3.footer__title Social Networ
-                for x in socialNetwork
-                    a(href=x.link)
-                        img.footer__icon(src=x.img, alt=x.name)
-            ul.footer__list
+                h3.footer__title.footer__title--inline Social Network
+                .footer__social-links
+                    for x in socialNetwork
+                        a(href=x.link)
+                            img.footer__social-icon(src=x.img, alt=x.name)
+            .footer__list.footer__legal
                 h3.footer__title LEGAL INFORMATION
-                for y in legalInformtion
-                    li.footer__item
-                        a.footer__link(href=y.link) #{y.name}
+                ul.footer__ul
+                    for y in legalInformtion
+                        li.footer__item
+                            a.footer__link(href=y.link) #{y.name}
+        .footer__wrap
             .footer__contacts
-                h3.footer__title Contact Details
+                h3.footer__title.footer__title--bigmargin Contact Details
                 p.footer__text Feel free to contact us by phone, email or by our contact form
-                ul.footer__list
+                ul.footer__ul
                     li.footer__item
-                        img.footer__icon(src=path+"location.svg", alt="Icon: location")
+                        img.footer__contact-icon(src=path+"location.svg", alt="Icon: location")
                         | 9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United States
                     li.footer__item
-                        img.footer__icon(src=path+"phone.svg", alt="Icon: phone")
-                        | Tel (business hours) : 269 1500
-                        | Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00 pm)
+                        img.footer__contact-icon(src=path+"phone.svg", alt="Icon: phone")
+                        | Tel (business hours) : 269 1500 <br>
+                        | Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00 pm) <br>
                         | Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)
                     li.footer__item
-                        img.footer__icon(src=path+"email.svg", alt="Icon: phone")
+                        img.footer__contact-icon(src=path+"email.svg", alt="Icon: phone")
                         | cherly.lawson@example.com
             .footer__contact-form
-                h3.footer__title Send us a message
+                h3.footer__title.footer__title--bigmargin Send us a message
                 form.footer__form(action="#")
-                    input.footer__input(type="text" placeholder="Your Full Name*")
-                    input.footer__input(type="text" placeholder="Phone Number*")
+                    input.footer__input-name(type="text" placeholder="Your Full Name*")
+                    input.footer__input-phone(type="text" placeholder="Phone Number*")
                     textarea.footer__message(name="message" placeholder="Message")
                     button.footer__button Send
                     span.footer__prompt * Required Fields
-                    
+        .footer__info
+            .footer__disclaimer
+                ul.footer__disclaimer-ul
+                    for z in disclaimerList
+                        li.footer__item
+                            a.footer__link(href=z.link) #{z.name}
+            .footer_payment
+                img(src=path+"payment.png", alt="Payment icons")
+
+
 
 
