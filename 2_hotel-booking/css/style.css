@@ -1815,9 +1815,9 @@ button.swiper-pagination-bullet {
 .packages__wrap {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 500px 500px;
+  -ms-grid-rows: 1fr 500px;
   -ms-grid-columns: (1fr)[3];
-      grid-template: 500px 500px/repeat(3, 1fr);
+      grid-template: 1fr 500px/repeat(3, 1fr);
   gap: 30px;
 }
 
@@ -1830,7 +1830,6 @@ button.swiper-pagination-bullet {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 500px;
   border-radius: 8px;
   overflow: hidden;
 }
@@ -1873,7 +1872,7 @@ button.swiper-pagination-bullet {
 .packages__img {
   -o-object-fit: cover;
      object-fit: cover;
-  height: 50%;
+  height: 250px;
   min-width: 100%;
   overflow: hidden;
 }
@@ -1903,7 +1902,7 @@ button.swiper-pagination-bullet {
 }
 
 .packages__info {
-  min-height: 50%;
+  min-height: 250px;
   min-width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3252,7 +3251,7 @@ button.swiper-pagination-bullet {
   }
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1130px) {
   .container {
     width: 91.14583%;
   }
@@ -3289,6 +3288,14 @@ button.swiper-pagination-bullet {
   }
 }
 
+@media (max-width: 950px) {
+  .packages__wrap {
+    -ms-grid-rows: 1fr 500px;
+    -ms-grid-columns: (1fr)[2];
+        grid-template: 1fr 500px/repeat(2, 1fr);
+  }
+}
+
 @media (max-width: 870px) {
   .navbar-menu__link {
     font-size: 13px;
@@ -3310,7 +3317,7 @@ button.swiper-pagination-bullet {
     width: 17.31771vw;
   }
   .hotel-info {
-    margin-bottom: 60px;
+    padding-bottom: 60px;
   }
 }
 
@@ -3446,6 +3453,37 @@ button.swiper-pagination-bullet {
   }
   .hotel-info__map {
     height: 173px;
+  }
+}
+
+@media (max-width: 630px) {
+  .packages__wrap {
+    -ms-grid-rows: 1fr 500px;
+    -ms-grid-columns: (1fr)[1];
+        grid-template: 1fr 500px/repeat(1, 1fr);
+  }
+  .packages__card:first-child {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 1;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .packages__card:first-child .packages__img {
+    height: 250px;
+    min-width: 100%;
+  }
+  .packages__card:first-child .packages__info {
+    padding: 30px 21px 25px 32px;
+    min-height: auto;
+  }
+  .packages__card:first-child .packages__bookInfoWrap {
+    padding-bottom: 37px;
+  }
+  .packages__card:nth-child(n+4) {
+    display: none;
   }
 }
 
