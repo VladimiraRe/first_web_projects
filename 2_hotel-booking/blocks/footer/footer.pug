@@ -1,0 +1,52 @@
+include ./config.pug
+
+footer
+    .container
+        .footer__wrap
+            img(src=path+"logo-vertical.svg", alt="Logo: Best Tour Plan").footer__logo
+            ul.footer__list
+                h3.footer__title All categories
+                for i in categoriesItems
+                    li.footer__item
+                        a.footer__link(href=i.link) #{i.name}
+            ul.footer__list
+                h3.footer__title ADDITIONAL INFORMATION
+                for j in additionalInformation
+                    li.footer__item
+                        a.footer__link(href=j.link) #{j.name}
+            .footer__socialnetwork
+                h3.footer__title Social Networ
+                for x in socialNetwork
+                    a(href=x.link)
+                        img.footer__icon(src=x.img, alt=x.name)
+            ul.footer__list
+                h3.footer__title LEGAL INFORMATION
+                for y in legalInformtion
+                    li.footer__item
+                        a.footer__link(href=y.link) #{y.name}
+            .footer__contacts
+                h3.footer__title Contact Details
+                p.footer__text Feel free to contact us by phone, email or by our contact form
+                ul.footer__list
+                    li.footer__item
+                        img.footer__icon(src=path+"location.svg", alt="Icon: location")
+                        | 9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United States
+                    li.footer__item
+                        img.footer__icon(src=path+"phone.svg", alt="Icon: phone")
+                        | Tel (business hours) : 269 1500
+                        | Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00 pm)
+                        | Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)
+                    li.footer__item
+                        img.footer__icon(src=path+"email.svg", alt="Icon: phone")
+                        | cherly.lawson@example.com
+            .footer__contact-form
+                h3.footer__title Send us a message
+                form.footer__form(action="#")
+                    input.footer__input(type="text" placeholder="Your Full Name*")
+                    input.footer__input(type="text" placeholder="Phone Number*")
+                    textarea.footer__message(name="message" placeholder="Message")
+                    button.footer__button Send
+                    span.footer__prompt * Required Fields
+                    
+
+
