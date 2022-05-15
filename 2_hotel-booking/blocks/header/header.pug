@@ -1,16 +1,17 @@
 include ./config.pug
+script(src=path+"main.js") 
 
 header
-    .navbar__top
+    .navbar__top.navbar__top--mobile
         .container
             .navbar__wrap
                 a.navbar__logo(href="#")
-                    img.navbar__logo-img(src="/2_hotel-booking/blocks/header/img/logo-horizontal.svg", alt="Logo: Best Tour Plan")
+                    img.navbar__logo-img(src=path+"img/logo-horizontal.svg", alt="Logo: Best Tour Plan")
 
                 include ../search/search.pug
 
-                a.user(href="#") 
-                    img.user__avatar(src="/2_hotel-booking/blocks/header/img"+avatar, alt="User Avatar")
+                a.user.user--hidden(href="#") 
+                    img.user__avatar(src=path+avatar, alt="User Avatar")
                     span.user__name #{username}
 
                 button.navbar__adaptive-btn
@@ -21,6 +22,14 @@ header
         .container
             nav.navbar-menu
                 ul.navbar-menu__list
+                    li.navbar-menu__item.navbar-menu__item--visible
+                        img.navbar-menu__avatar(src=path+avatar, alt="User Avatar")
+                        .navbar-menu__item.navbar-menu__item--visible.navbar-menu__name #{username}
+                    li.navbar-menu__item.navbar-menu__item--visible
+                        form.search.navbar__search.navbar__search--mobile(action="#")
+                            input.search__input(type="text", placeholder="Search Location")        
+                            button.search__button
+                                img.search__img(src="/2_hotel-booking/blocks/search/search.svg", alt="Icon:  Search")
                     for i in navbarmenu__items
                         li.navbar-menu__item
                             a.navbar-menu__link(href="#") #{i}

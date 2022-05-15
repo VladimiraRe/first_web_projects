@@ -20,6 +20,10 @@
 
     &__search {
         margin-right: (368px / 1440px) * 100vw;
+
+        &--mobile {
+            display: none;
+        }
     }
 
     &-bottom {
@@ -48,9 +52,24 @@
             @include font-mulish(14px, 700, $light, 18px);
             text-transform: uppercase;
         }
+
+        &__avatar {
+            object-fit: cover;
+            border-radius: 50%;
+            height: 40px;
+            width: 40px;
+        }
+
+        &__name {
+            @include font-mulish(14px, 400, $light, 17px);
+        }
         
         &__item {
             list-style: none;
+
+            &--visible {
+                display: none;
+            }
         }
     }
 }

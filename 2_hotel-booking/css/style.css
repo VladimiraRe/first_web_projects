@@ -487,6 +487,10 @@ img {
   margin-right: 25.55556vw;
 }
 
+.navbar__search--mobile {
+  display: none;
+}
+
 .navbar-bottom {
   background-color: #0A223D;
 }
@@ -526,8 +530,28 @@ img {
   text-transform: uppercase;
 }
 
+.navbar-menu__avatar {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+}
+
+.navbar-menu__name {
+  font-family: "Mulish", serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #FFFFFF;
+  line-height: 17px;
+}
+
 .navbar-menu__item {
   list-style: none;
+}
+
+.navbar-menu__item--visible {
+  display: none;
 }
 
 .user {
@@ -3704,13 +3728,33 @@ button.swiper-pagination-bullet {
 }
 
 @media (max-width: 720px) {
+  body {
+    padding-top: 78px;
+  }
+  .navbar__top--mobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
   .navbar__wrap {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .navbar-menu {
+  .navbar-bottom {
     display: none;
+    position: fixed;
+    top: 78px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    padding-top: 31px;
+  }
+  .navbar-bottom--visible {
+    display: block;
   }
   .navbar__logo-img {
     width: 133px;
@@ -3740,10 +3784,44 @@ button.swiper-pagination-bullet {
     width: 16px;
     height: 1px;
   }
-  .search {
+  .navbar-menu__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .navbar-menu__item {
+    margin-bottom: 20px;
+  }
+  .navbar-menu__item--visible {
+    display: block;
+  }
+  .navbar-menu__avatar {
+    display: block;
+    margin-bottom: 10px;
+  }
+  .navbar-menu__name {
+    display: block;
+    margin-bottom: 7px;
+  }
+  .navbar__search--hidden {
     display: none;
   }
-  .user {
+  .navbar__search--mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 0;
+    margin-bottom: 19px;
+    width: 245px;
+  }
+  .search__input {
+    width: 180px;
+  }
+  .search__button {
+    width: 65px;
+  }
+  .user--hidden {
     display: none;
   }
   .rating {
