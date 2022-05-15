@@ -145,6 +145,7 @@
         border-radius: 4px;
         @include font-mulish(12px, 400, $light-gray, 15px);
         padding: 18px 0 0 23px;
+        resize: none;
     }
 
     &__button {
