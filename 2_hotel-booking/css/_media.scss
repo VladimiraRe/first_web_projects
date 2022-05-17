@@ -140,6 +140,25 @@
             }
         }
     }
+
+    .modal {
+        &__dialog {
+            padding: 20px 40px;
+            min-width: 300px;
+        }
+
+        &__btn {
+            grid-row: 6 / 7;
+            grid-column: span 2;
+        }
+
+        &__prompt {
+            grid-row: 5 / 6;
+            grid-column: span 2;
+            margin-bottom: 15px;
+            justify-self: start;
+        }
+    }
 }
 
 @media (max-width: 768px) {

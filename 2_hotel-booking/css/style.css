@@ -3554,7 +3554,7 @@ button.swiper-pagination-bullet {
   color: #FFFFFF;
   line-height: 22px;
   text-align: center;
-  margin-bottom: 15px;
+  margin: 0 0 15px 0;
 }
 
 .modal__form {
@@ -3745,6 +3745,25 @@ button.swiper-pagination-bullet {
 @media (max-width: 870px) {
   .navbar-menu__link {
     font-size: 13px;
+  }
+  .modal__dialog {
+    padding: 20px 40px;
+    min-width: 300px;
+  }
+  .modal__btn {
+    -ms-grid-row: 6;
+    -ms-grid-row-span: 1;
+    grid-row: 6 / 7;
+    grid-column: span 2;
+  }
+  .modal__prompt {
+    -ms-grid-row: 5;
+    -ms-grid-row-span: 1;
+    grid-row: 5 / 6;
+    grid-column: span 2;
+    margin-bottom: 15px;
+    -ms-grid-column-align: start;
+        justify-self: start;
   }
 }
 

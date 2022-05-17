@@ -9,9 +9,4 @@ window.addEventListener('load', function() {
         modalOverlay.classList.remove('modal__overlay--visible');
         modalDialog.classList.remove('modal__dialog--visible');
     })
-
-
-
-
-
 })
