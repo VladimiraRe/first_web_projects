@@ -3496,6 +3496,111 @@ button.swiper-pagination-bullet {
   line-height: 15px;
 }
 
+.modal__overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 143, 223, 0.39);
+  z-index: 100;
+}
+
+.modal__dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 101;
+  max-width: 478px;
+  padding: 33px 87px;
+  background-color: #0A223D;
+  border-radius: 8px;
+}
+
+.modal__close {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal__title {
+  font-family: "Mulish", serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #FFFFFF;
+  line-height: 22px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.modal__form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(min-content, 1fr))[2];
+      grid-template-columns: repeat(2, minmax(-webkit-min-content, 1fr));
+      grid-template-columns: repeat(2, minmax(min-content, 1fr));
+}
+
+.modal__input {
+  height: 50px;
+  width: 100%;
+  margin-bottom: 15px;
+  grid-column: span 2;
+  border-radius: 4px;
+  background-color: #fff;
+  border: 0;
+  font-family: "Mulish", serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #BDBDBD;
+  line-height: 15px;
+  padding-left: 23px;
+}
+
+.modal__message {
+  grid-column: span 2;
+  min-height: 123px;
+  width: 100%;
+  background-color: #fff;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  resize: none;
+}
+
+.modal__btn {
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+  background-color: #EC1F46;
+  border: none;
+  border-radius: 4px;
+  font-family: "Mulish", serif;
+  font-size: 12px;
+  font-weight: 700;
+  color: #FFFFFF;
+  line-height: 15px;
+  padding: 17px 65px;
+}
+
+.modal__prompt {
+  font-family: "Mulish", serif;
+  font-size: 12px;
+  font-weight: 700;
+  color: #FFFFFF;
+  line-height: 15px;
+  -ms-grid-column-align: end;
+      justify-self: end;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
 @media (min-width: 1440px) {
   .navbar__wrap {
     -webkit-box-pack: justify;

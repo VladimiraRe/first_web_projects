@@ -1,0 +1,16 @@
+include ./config.pug
+script(src=modal__path+"modal.js")
+
+.modal
+    .modal__overlay
+    .modal__dialog
+        a.modal__close(href="#")
+            img(src=modal__path+"img/close.svg")
+        h2.modal__title Booking
+        form.modal__form(action="#")
+            input.modal__input(type="text" placeholder="Your Full Name*")
+            input.modal__input(type="text" placeholder="Phone Number*")
+            input.modal__input(type="text" placeholder="Email*")
+            texterea.modal__message(name="message" placeholder="Message")
+            button.modal__btn Send
+            span.modal__prompt * Required Fields
