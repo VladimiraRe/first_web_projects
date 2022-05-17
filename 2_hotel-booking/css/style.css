@@ -3504,6 +3504,15 @@ button.swiper-pagination-bullet {
   bottom: 0;
   background-color: rgba(0, 143, 223, 0.39);
   z-index: 100;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.modal__overlay--visible {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .modal__dialog {
@@ -3517,6 +3526,15 @@ button.swiper-pagination-bullet {
   padding: 33px 87px;
   background-color: #0A223D;
   border-radius: 8px;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.modal__dialog--visible {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .modal__close {

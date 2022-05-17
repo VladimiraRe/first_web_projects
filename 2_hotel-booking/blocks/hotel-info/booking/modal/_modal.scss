@@ -8,6 +8,14 @@
         bottom: 0;
         background-color: rgba(0, 143, 223, 0.39);
         z-index: 100;
+        visibility: hidden;
+        opacity: 0;
+
+        &--visible {
+            visibility: visible;
+            opacity: 1;
+            transition: 0.2s;
+        }
     }
 
     &__dialog {
@@ -20,6 +28,14 @@
         padding: 33px 87px;
         background-color: $dark;
         border-radius: 8px;
+        visibility: hidden;
+        opacity: 0;
+
+        &--visible {
+            visibility: visible;
+            opacity: 1;
+            transition: 0.2s;
+        }
     }
 
     &__close {

@@ -1,10 +1,13 @@
 window.addEventListener('load', function() {
 
-    const modal = document.querySelector('.modal')
-    const modal__close = document.querySelector('.modal__close')
+    modalOverlay = document.querySelector('.modal__overlay')
+    modalDialog = document.querySelector('.modal__dialog')
+    const modalClose = document.querySelector('.modal__close')
 
-    modal__close.addEventListener('click', function() {
-        console.log('Click')
+    modalClose.addEventListener('click', function(event) {
+        event.preventDefault();
+        modalOverlay.classList.remove('modal__overlay--visible');
+        modalDialog.classList.remove('modal__dialog--visible');
     })
 
 
