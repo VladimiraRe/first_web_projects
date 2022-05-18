@@ -25,6 +25,7 @@
         transform: translate(-50%, -50%);
         z-index: 101;
         max-width: 478px;
+        min-width: 300px;
         padding: 33px 87px;
         background-color: $dark;
         border-radius: 8px;
@@ -88,6 +89,7 @@
         border-radius: 4px;
         @include font-mulish(12px, 700, $light, 15px);
         padding: 17px 65px;
+        cursor: pointer;
     }
 
     &__prompt {

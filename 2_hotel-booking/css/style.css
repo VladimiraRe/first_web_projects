@@ -3523,6 +3523,7 @@ button.swiper-pagination-bullet {
           transform: translate(-50%, -50%);
   z-index: 101;
   max-width: 478px;
+  min-width: 300px;
   padding: 33px 87px;
   background-color: #0A223D;
   border-radius: 8px;
@@ -3604,6 +3605,7 @@ button.swiper-pagination-bullet {
   color: #FFFFFF;
   line-height: 15px;
   padding: 17px 65px;
+  cursor: pointer;
 }
 
 .modal__prompt {
@@ -3748,7 +3750,6 @@ button.swiper-pagination-bullet {
   }
   .modal__dialog {
     padding: 20px 40px;
-    min-width: 300px;
   }
   .modal__btn {
     -ms-grid-row: 6;
@@ -4236,6 +4237,13 @@ button.swiper-pagination-bullet {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+}
+
+@media (max-width: 300px) {
+  .modal__dialog {
+    min-width: none;
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
