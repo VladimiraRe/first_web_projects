@@ -55,7 +55,7 @@
         margin: 0 0 15px 0;
     }
 
-    &__form {
+    &__form-wrap {
         display: grid;
         grid-template-columns: repeat(2, minmax(min-content, 1fr));
     }
@@ -63,7 +63,7 @@
     &__input {
         height: 50px;
         width: 100%;
-        margin-bottom: 15px;
+        margin-top: 15px;
         grid-column: span 2;
         border-radius: 4px;
         background-color: #fff;
@@ -78,8 +78,14 @@
         width: 100%;
         background-color: #fff;
         margin-bottom: 15px;
+        margin-top: 15px;
         border-radius: 4px;
         resize: none;
+    }
+
+    &__btn-wrap {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(min-content, 1fr))
     }
 
     &__btn {

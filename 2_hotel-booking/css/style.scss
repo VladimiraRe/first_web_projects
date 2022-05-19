@@ -37,5 +37,8 @@
 //Подключение стилей модального окна
 @import "../blocks/hotel-info/booking/modal/modal";
 
+//Подключение стилей для валидации форма
+@import "../blocks/validate/validate";
+
 //Подключение стилей для адаптива
 @import "./media";

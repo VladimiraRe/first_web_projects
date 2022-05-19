@@ -4,6 +4,10 @@
     overflow: hidden;
     border-radius: 6px;
 
+    &__wrap {
+        @include adaptive-width(285px);
+    }
+
     &__input {
         @include adaptive-width(285px);
         height: 40px;
@@ -12,6 +16,10 @@
         padding-left: (23px / 1440px) * 100vw;
         padding-right: (23px / 1440px) * 100vw;
         @include font-mulish(12px, 400, $font-grey, 15.06px);
+
+        &:focus {
+            outline: none;
+        }
     }
     
     &__button {
@@ -21,6 +29,7 @@
         background-color: $red;
         padding: 0;
         display: flex;
+        cursor: pointer;
     }
 
     &__img {

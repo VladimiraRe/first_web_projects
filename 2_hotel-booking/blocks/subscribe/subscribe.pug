@@ -5,9 +5,8 @@ section.subscribe.content__subscribe
                 span.subscribe__strong <br>Newsletter
             
             form.subscribe__form(action="#")
-                input.subscribe__input(type="text", placeholder="Your email address")
+                input.subscribe__input(
+                    type="text"
+                    placeholder="Your email address"
+                    required)
                 button.subscribe__button Send
-
-script(src="/2_hotel-booking/js/jquery-3.6.0.min.js")
-script(src="/2_hotel-booking/blocks/subscribe/js/parallax.min.js")
-script(src="/2_hotel-booking/blocks/subscribe/js/main.js")

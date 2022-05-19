@@ -47,8 +47,17 @@ footer.footer
             .footer__contact-form
                 h3.footer__title.footer__title--bigmargin Send us a message
                 form.footer__form(action="#")
-                    input.footer__input-name(type="text" placeholder="Your Full Name*")
-                    input.footer__input-phone(type="text" placeholder="Phone Number*")
+                    .footer__form-wrap
+                        input.footer__input-name(
+                            type="text"
+                            name="name"
+                            placeholder="Your Full Name*"
+                            required)
+                        input.footer__input-phone(
+                            type="tel"
+                            name="tel"
+                            placeholder="Phone Number*"
+                            required)
                     textarea.footer__message(name="message" placeholder="Message")
                     button.footer__button Send
                     span.footer__prompt * Required Fields

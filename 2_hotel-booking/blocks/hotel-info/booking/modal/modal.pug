@@ -8,9 +8,23 @@ script(src=modal__path+"modal.js")
             img(src=modal__path+"img/close.svg")
         h2.modal__title Booking
         form.modal__form(action="#")
-            input.modal__input(type="text" placeholder="Your Full Name*")
-            input.modal__input(type="text" placeholder="Phone Number*")
-            input.modal__input(type="text" placeholder="Email*")
-            texterea.modal__message(name="message" placeholder="Message")
-            button.modal__btn Send
-            span.modal__prompt * Required Fields
+            .modal__form-wrap
+                input.modal__input(
+                    type="text"
+                    name="name"
+                    placeholder="Your Full Name*"
+                    required)
+                input.modal__input(
+                    type="tel"
+                    name="tel"
+                    placeholder="Phone Number*"
+                    required)
+                input.modal__input(
+                    type="email"
+                    name="email"
+                    placeholder="Email*"
+                    required)
+                texterea.modal__message(name="message" placeholder="Message")
+            .modal__btn-wrap
+                button.modal__btn Send
+                span.modal__prompt * Required Fields

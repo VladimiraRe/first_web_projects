@@ -9,4 +9,14 @@ window.addEventListener('load', function() {
         modalOverlay.classList.remove('modal__overlay--visible');
         modalDialog.classList.remove('modal__dialog--visible');
     })
+
+    document.addEventListener('keydown', function(event) {
+        if (modalDialog.classList.contains('modal__dialog--visible')
+        && modalOverlay.classList.contains('modal__overlay--visible')) {
+            if(event.code === 'Escape') {
+                modalOverlay.classList.remove('modal__overlay--visible');
+                modalDialog.classList.remove('modal__dialog--visible');
+            }
+        }
+    })
 })
