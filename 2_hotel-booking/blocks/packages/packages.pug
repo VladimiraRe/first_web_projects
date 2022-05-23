@@ -5,7 +5,7 @@ section.packages
         h2.packages__title Other Packages
         .packages__wrap
             for i in allPackages
-                .packages__card
+                .packages__card(data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-delay="100")
                     img(src=i.img, alt=i.name).packages__img
                     span.packages__offer Flash Offer
                     .packages__info

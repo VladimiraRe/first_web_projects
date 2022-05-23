@@ -5,7 +5,7 @@ section.activities
         h2.activities__title Other Activities
         .activities__wrap
             for i in activity
-                .activities__card
+                .activities__card(data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-delay="100")
                     img(src=i.img, alt=i.title).activities__img
                     h3.activities__description #{i.title}
                     button.activities__btn Book Now
