@@ -6,24 +6,28 @@
 
         &__logo-img {
             width: 177px;
-            margin-right: none;
+            margin-right: 108px;
+        }
 
         &__search {
-            margin-right: none;
+            margin-right: 368px;
         }
-        }
+    }
     
     .search {
-        max-width: 350px;
+        width: 350px;
+
+        &__wrap {
+            width: 285px;
+        }
 
         &__input {
-            max-width: 285px;
+            width: 285px;
         }
 
         &__button {
-            max-width: 65px;
+            width: 65px;
         }
-    }
     }
 }
 
@@ -636,7 +640,7 @@
 @media (max-width: 300px) {
     .modal {
         &__dialog {
-            min-width: none;
+            min-width: auto;
             width: 100%;
         }
     }

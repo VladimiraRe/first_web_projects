@@ -2062,6 +2062,19 @@ button.swiper-pagination-bullet {
   height: 100%;
 }
 
+.subscribe__paralax {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
 .subscribe__wrap {
   position: relative;
   max-width: 731px;
@@ -3391,16 +3404,16 @@ button.swiper-pagination-bullet {
 .footer__form {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(1fr, 255px))[2];
-      grid-template-columns: repeat(2, minmax(1fr, 255px));
+  -ms-grid-columns: (minmax(0px, 255px))[2];
+      grid-template-columns: repeat(2, minmax(0px, 255px));
   gap: 15px 30px;
 }
 
 .footer__form-wrap {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(1fr, 255px))[2];
-      grid-template-columns: repeat(2, minmax(1fr, 255px));
+  -ms-grid-columns: (minmax(0px, 255px))[2];
+      grid-template-columns: repeat(2, minmax(0px, 255px));
   -webkit-column-gap: 30px;
           column-gap: 30px;
   -ms-grid-row: 1;
@@ -3663,19 +3676,22 @@ button.swiper-pagination-bullet {
   }
   .navbar__logo-img {
     width: 177px;
-    margin-right: none;
+    margin-right: 108px;
   }
-  .navbar__logo-img__search {
-    margin-right: none;
+  .navbar__search {
+    margin-right: 368px;
   }
-  .navbar .search {
-    max-width: 350px;
+  .search {
+    width: 350px;
   }
-  .navbar .search__input {
-    max-width: 285px;
+  .search__wrap {
+    width: 285px;
   }
-  .navbar .search__button {
-    max-width: 65px;
+  .search__input {
+    width: 285px;
+  }
+  .search__button {
+    width: 65px;
   }
 }
 
@@ -4283,7 +4299,7 @@ button.swiper-pagination-bullet {
 
 @media (max-width: 300px) {
   .modal__dialog {
-    min-width: none;
+    min-width: auto;
     width: 100%;
   }
 }
