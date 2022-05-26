@@ -5,6 +5,16 @@ $path: "/2_hotel-booking/blocks/hotel-info/";
   max-width: 728px;
   max-height: 450px;
   border-radius: 8px;
+  overflow: hidden;
+
+  &-wrapper {
+    max-width: 728px;
+    max-height: 450px;
+  }
+
+  &-img {
+    object-fit: cover;
+  }
 
   &-button-prev {
     z-index: 3;

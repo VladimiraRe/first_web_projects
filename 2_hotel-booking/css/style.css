@@ -1514,6 +1514,17 @@ button.swiper-pagination-bullet {
   max-width: 728px;
   max-height: 450px;
   border-radius: 8px;
+  overflow: hidden;
+}
+
+.swiper-wrapper {
+  max-width: 728px;
+  max-height: 450px;
+}
+
+.swiper-img {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .swiper-button-prev {
@@ -1781,6 +1792,7 @@ button.swiper-pagination-bullet {
 .hotel-info__slider-item {
   position: relative;
   z-index: 1;
+  overflow: hidden;
 }
 
 .hotel-info__slider-item::after {
