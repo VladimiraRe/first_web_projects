@@ -2119,9 +2119,10 @@ button.swiper-pagination-bullet {
 
 .subscribe__form {
   width: 350px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: minmax(100px, 285px) 65px;
+      grid-template-columns: minmax(100px, 285px) 65px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -2130,6 +2131,13 @@ button.swiper-pagination-bullet {
 }
 
 .subscribe__input {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
+  outline: none;
   width: 285px;
   min-height: 40px;
   border: none;
@@ -2144,6 +2152,12 @@ button.swiper-pagination-bullet {
 }
 
 .subscribe__button {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
   font-family: "Mulish", serif;
   font-size: 12px;
   font-weight: 700;

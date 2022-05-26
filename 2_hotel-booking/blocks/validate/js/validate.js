@@ -28,3 +28,13 @@ $(".footer__form").validate({
         },
     }
 });
+
+$(".subscribe__form").validate({
+    errorClass: "validate",
+    messages: {
+        subscribe: {
+            required: "Please enter your email",
+            email: "Your email address must be in the format of name@domain.com",
+        }
+    }
+});
