@@ -1,0 +1,41 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet" href="/hotel-booking/src/blocks/animation/aos.css")
+        link(rel="stylesheet", href="/hotel-booking/src/css/style.css")
+        title Best Tour Plan - Hotel Booking
+    body
+        include ./blocks/header/header.pug
+        include ./blocks/breadcrumb/breadcrumb.pug
+        include ./blocks/hotel-info/hotel-info.pug
+        include ./blocks/packages/packages.pug
+        include ./blocks/subscribe/subscribe.pug
+        include ./blocks/reviews/reviews.pug
+        include ./blocks/activities/activities.pug
+        include ./blocks/footer/footer.pug
+
+        //jQuery
+        script(src="/hotel-booking/src/js/jquery-3.6.0.min.js")
+        //Анимация прокрутки
+        script(src="/hotel-booking/src/blocks/animation/aos.js")
+        script(src="/hotel-booking/src/blocks/animation/animation.js")
+        //Адаптивное меню
+        script(src="/hotel-booking/src/blocks/header/main.js") 
+        //Слайдеры
+        script(src="/hotel-booking/src/blocks/hotel-info/slider/js/swiper-bundle.min.js")
+        script(src="/hotel-booking/src/blocks/hotel-info/slider/js/swiper-bundle.min.js.map")
+        script(src="/hotel-booking/src/blocks/hotel-info/slider/js/slider.js")
+        script(src="/hotel-booking/src/blocks/reviews/slider/js/main.js")
+        //Кнопка для бронирования
+        script(src="/hotel-booking/src/blocks/hotel-info/booking/booking.js")
+        //Паралакс
+        script(src="/hotel-booking/src/blocks/subscribe/js/subscribe.js") 
+        //Валидация форм
+        script(src="/hotel-booking/src/blocks/validate/js/jquery.validate.min.js")
+        script(src="/hotel-booking/src/blocks/validate/js/validate.js")
+        //Маска для телефонного номера
+        script(src="/hotel-booking/src/blocks/mask/js/jquery.mask.min.js")
+        script(src="/hotel-booking/src/blocks/mask/js/mask.js")

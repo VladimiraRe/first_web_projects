@@ -1,0 +1,22 @@
+include ./config.pug
+
+.booking.hotel-info__booking
+    .booking__container
+        .booking__info
+            .booking__price
+                span.booking__price-start price starts as
+                strong.booking__price-tag $ 8,500
+                span.booking__per-room per room / night
+            .booking__description
+                .booking__wrap
+                    img(src=path+"/img/user.svg", alt="Person Icon").booking__icon
+                    span.booking__text 2 x Guests
+                .booking__wrap
+                    img(src=path+"/img/home.svg", alt="Home Icon").booking__icon.booking__icon--home
+                    span.booking__text 1 x Room
+        .booking__call-centre
+            span.booking__quick Quick Booking
+            .booking__call
+                img.booking__phone-icon(src=path+"/img/phone.svg", alt="Phone Icon")
+                a(href="tel:12100").booking__tel 12100
+        button.booking__button(data-toggle="modal") View Other Options

@@ -1,0 +1,98 @@
+.hotel-info {
+    padding-bottom: 70px;
+
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    &__stars {
+        height: 6px;
+        flex-basis: 100%;
+        display: flex;
+    }
+
+    &_text {
+        display: flex;
+    }
+
+    &__name {
+        margin: 4px 0 0 0;
+        @include font-mulish(24px, 700, $font-grey, 30px);
+        text-transform: uppercase;
+    }
+
+    &__offer {
+        padding: 3px 9px;
+        margin: 4px 0 0 23px;
+        background-color: $red;
+        border-radius: 3px;
+        @include font-mulish(10px, 600, $light, 13px);
+    }
+
+    &__description {
+        margin: 0 0 20px 0;
+    }
+
+    &__description {
+        @include font-mulish(12px, 400, $font-grey, 15px);
+    }
+
+    &__grid {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__swiper {
+        flex-grow: 1;
+        margin-right: 30px;
+        flex-shrink: 0;
+    }
+
+    &__slider-item {
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+    
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
+            z-index: 2;
+        }
+    }
+
+    &__right-wrap {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__booking {
+        margin-bottom: 27px;
+        width: 100%;
+    }
+
+    &__map {
+        width: 100%;
+        min-height: 0;
+        flex-grow: 1;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+}
